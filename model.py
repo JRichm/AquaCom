@@ -7,7 +7,7 @@ db = SQLAlchemy()
 
 
 ## user model
-class User(db.model):
+class User(db.Model):
     __tablename__ = "users"
     
     user_id = db.Column(db.Integer(), primary_key=True, autoincrement=True)
@@ -21,13 +21,11 @@ class User(db.model):
 
 
 ## pending commision model
-class Commision(db.model):
+class Commision(db.Model):
     __tablename__ = "commisions"
     
-    comm_id = db.Column(db.Integer(), primay_key=True, autoincrement=True)
+    comm_id = db.Column(db.Integer(), primary_key=True, autoincrement=True)
     user_id = db.Column(db.Integer(), db.ForeignKey("users.user_id"), nullable=False)
-    
-    user = db.relationship('User', backref="commisions")
     
     def __repr__(self):
         

@@ -1,6 +1,7 @@
 """ ### Server File ### """
 
 from jinja2 import StrictUndefined
+from model import connect_to_db
 from flask import (
     Flask,
     render_template,
@@ -14,14 +15,15 @@ from flask import (
 
 app = Flask(__name__)
 app.secret_key = "aqua"
-app.jinja_evn.undefined = StrictUndefined
+app.jinja_env.undefined = StrictUndefined
 
 
 """ ### Server Routes ### """
 
 # index
 @app.route('/')
-def index(): render_template("index.html")
+def index():
+    return render_template("index.html")
 
 
 """ ### Server Config ### """
