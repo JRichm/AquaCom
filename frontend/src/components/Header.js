@@ -1,16 +1,19 @@
 import React from 'react';
+import '../styles/Header.css'
 
 function Header() {
     return (
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="https://google.com/">google</a></li>
-                    <li><a href="https://youtube.com/">youtube</a></li>
-                    <li><a href="https://minecraft.net/">minecraft</a></li>
-                </ul>
-            </nav>
-        </header>
+        <>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="https://google.com/">Google</a></li>
+                        <li><a href="https://youtube.com/">Youtube</a></li>
+                        <li><a href="https://minecraft.net/">Minecraft</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </>
     )
 }
 
