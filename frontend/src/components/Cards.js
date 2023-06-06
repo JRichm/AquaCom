@@ -13,7 +13,7 @@ function Cards() {
                     <CardItem src='images/img-2.jpg' text="Travel through the Islands of Bali in a Private Cruise!" label='Luxury' path='/services' />
                 </ul>
                 <ul className='cards__items'>
-                    <CardItem src='images/img-3.jpg' text="Set sail in the Atlantic Ocean visitin Uncharted Waters" label='Mystery' path='/services' />
+                    <CardItem src='images/img-3.jpg' text="Commissions Are Open" label='Limited Time' path='/request' />
                     <CardItem src='images/img-4.jpg' text="Experience Football on Top of the Himilayan Mountains" label='Adventure' path='/services' />
                     <CardItem src='images/img-8.jpg' text="Ride through the Sahara Desert on a guided camel tour" label='Adrenaline' path='/services' />
                 </ul>
