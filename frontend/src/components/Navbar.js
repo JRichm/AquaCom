@@ -39,10 +39,10 @@ function Navbar() {
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>Home</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/commision' className='nav-links' onClick={closeMobileMenu}>Request Commision</Link>
+                            <Link to='/services' className='nav-links' onClick={closeMobileMenu}>Services</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/dashboard' className='nav-links' onClick={closeMobileMenu}>Dashboard</Link>
+                            <Link to='/products' className='nav-links' onClick={closeMobileMenu}>Products</Link>
                         </li>
                     </ul>
                     {button && <Button buttonStyle='btn--outline'>Sign Up</Button>}
