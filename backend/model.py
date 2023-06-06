@@ -1,4 +1,4 @@
-""" ### Models for commision  ### """
+""" ### Models for commission  ### """
 
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -14,21 +14,29 @@ class User(db.Model):
     username = db.Column(db.String(), unique=True, nullable=False)
     email = db.Column(db.String(), unique=True, nullable=False)
     password = db.Column(db.String(), nullable=False)
-    account_status = db.Column(db.Integer(), nullable=False)
+    user_status = db.Column(db.Integer(), nullable=False)
     
     def __repr__(self):
-        return f"<{self.username}#{self.user_id} LS{self.account_status}>"
+        return f"<{self.username}#{self.user_id} LS{self.user_status}>"
 
 
-## pending commision model
-class Commision(db.Model):
-    __tablename__ = "commisions"
+## pending commission model
+class Commission(db.Model):
+    __tablename__ = "commissions"
     
     comm_id = db.Column(db.Integer(), primary_key=True, autoincrement=True)
     user_id = db.Column(db.Integer(), db.ForeignKey("users.user_id"), nullable=False)
+    description = db.Column(db.String())
+    num_characters = db.Column(db.Integer(), nullable=False)
+    level_of_detail = db.Column(db.Integer(), nullable=False)
+    request_date = db.Column(db.DateTime(), nullable=False)
+    confirm_date = db.Column(db.DateTime(), nullable=True)
+    price_estimate = db.Column(db.Numeric())
+    price_charged = db.Column(db.Numeric())
+    
+    user = db.relationship("User", backref='commissions')
     
     def __repr__(self):
-        
         return f"<{self.user}>"
 
 
