@@ -1,0 +1,23 @@
+.dash-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dash-view-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 15px;
+    min-height: 100px;
+    min-width: 200px;
+}
+
+
+
+.dash-view-item > * { 
+    margin: 5px;
+}

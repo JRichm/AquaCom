@@ -66,13 +66,13 @@ function Footer() {
             <Link className='social-icon-link instagram' to='/' target='_blank' aria-label='Instagram' >
               <i className='fab fa-instagram' />
             </Link>
-            <Link className='social-icon-link youtube' to='/' target='_blank' aria-label='Youtube' >
+            <Link className='social-icon-link youtube' to='https://www.youtube.com/channel/UCRNaV0yW1ImhB7u8LXKE2MQ' target='_blank' aria-label='Youtube' >
               <i className='fab fa-youtube' />
             </Link>
-            <Link className='social-icon-link twitter' to='/' target='_blank' aria-label='Twitter' >
+            <Link className='social-icon-link twitter' to='https://twitter.com/sixjames_' target='_blank' aria-label='Twitter' >
               <i className='fab fa-twitter' />
             </Link>
-            <Link className='social-icon-link twitter' to='/' target='_blank' aria-label='LinkedIn' >
+            <Link className='social-icon-link twitter' to='https://www.linkedin.com/in/jrichm444/' target='_blank' aria-label='LinkedIn' >
               <i className='fab fa-linkedin' />
             </Link>
           </div>
